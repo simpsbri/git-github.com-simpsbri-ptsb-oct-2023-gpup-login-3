@@ -18,3 +18,21 @@ display: flex;
 justify-content: center;
 align-self:center;
 }
+
+/* product display */
+#total-products{
+    font-size: 18px;
+    color: #333333;
+    border-bottom: 2px solid #4C1582;
+}
+
+.item-img {
+    width: 415px;
+    height: 115px;
+}
+
+.item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
