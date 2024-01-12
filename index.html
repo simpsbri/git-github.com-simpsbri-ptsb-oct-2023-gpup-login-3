@@ -18,25 +18,30 @@
     </header>
     <div class="content">
      <div id="product-display">
-      <!-- <div id="total-products">3 Products</div> -->
-      <!-- <hr> -->
+
       <div class="items">
         <div id="product-head">
           <div id="total-products">3 Products</div>
         </div>
+
         <div id="product-list">
           <div class="item">
-            <img class="item-img" src=""/>
+            <div class="img-div">
+              <img class="item-img" src=""/>
+            </div>
+            
             <div class="item-info">
               <div class="item-name">System Design Interview Book</div>
               <div class="item-price">$32.99</div>
               <div>Category: books</div>
-              <button class="add-to-cart"  onclick="addToCart('System Design Interview Book', 32.99)">ADD TO CART</button>
+              <button class="add-to-cart" onclick="addToCart('System Design Interview Book', 32.99)" id="btn-1">ADD TO CART</button>
             </div>
           </div>
 
           <div class="item">
-            <img class="item-img" src=""/>
+            <div class="img-div">
+              <img class="item-img" src=""/>
+            </div>
             <div class="item-info">
               <div class="item-name">Steve Jobs Biography</div>
               <div class="item-price">$64.34</div>
@@ -46,7 +51,9 @@
           </div>
 
           <div class="item">
-            <img class="item-img" src=""/>
+            <div class="img-div">
+              <img class="item-img" src=""/>
+            </div>
             <div class="item-info">
               <div class="item-name">Wooden Bookcase</div>
               <div class="item-price">$80.00</div>
@@ -58,16 +65,14 @@
       </div>
 
       <div id="cart">
-        <div id="cart-hear">
+        <div id="cart-header">
           <div id="total-item">CART(0)</div>
         </div>
+
         <div id="cart-display">
-          <div class="item-checkout">
-            <div id="cartItems">
-
-            </div>
-
+          <div id="item-list-display">
           </div>
+
           <div class="item-checkout-total">
             <!-- example -->
             <div id="tax-shipping">Tax + Shipping</div>
@@ -77,10 +82,11 @@
         <div id="total-div">
           <div id="total">Total: --</div>
           <button id="checkout">Checkout</button>
-          </div>
-          </div>
+        </div>
+      </div>
 
-
+      </div>
+    </div>
     <footer>
       <div class="footer">
         <p id="copyright">
