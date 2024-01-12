@@ -46,10 +46,10 @@ body {
   margin: 5px;
 }
 
-/* .item-img {
+.item-img {
   width: inherit;
   height: inherit;
-} */
+}
 
 .items {
   margin-bottom: 20px;
@@ -106,7 +106,7 @@ body {
   padding: 0px 3px;
 }
 #item-list-list li {
-  padding: 2px
+  padding: 2px;
   display: grid;
   grid-template-columns: auto max-content;
   align-items: end;
@@ -167,6 +167,4 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-  }
-
+}
