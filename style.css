@@ -30,29 +30,31 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-width: 48%;
 }
 
 #total-products {
   font-size: 18px;
   color: #333333;
-  border-bottom: 2px solid #4c1582;
+  border-bottom: 2px solid #4c158240;
+  margin-bottom: 10px;
 }
 
 .img-div {
   width: 415px;
   height: 115px;
+  margin: 5px;
 }
 
-.item-img {
+/* .item-img {
   width: inherit;
   height: inherit;
-}
+} */
 
 .items {
   margin-bottom: 20px;
   display: inline-flex;
   flex-direction: column;
-  width: 50%;
 }
 
 .item {
@@ -83,36 +85,50 @@ body {
   background-color: #4c1582;
 }
 
-/* cart dislpay */
+/* cart display */
 #cart {
   display: inline-flex;
   flex-direction: column;
-  width: 40%;
+  min-width: 40%;
 }
-
+.delete-btn {
+  background-color: red;
+  color: white;
+  margin-left: 25px;
+}
 #item-list-display {
   display: block;
   padding-bottom: 40%;
+  width: 100%;
+}
+#item-list-list {
+  list-style-type: none;
+  padding: 0px 3px;
+}
+#item-list-list li {
+  padding: 2px
+  display: grid;
+  grid-template-columns: auto max-content;
+  align-items: end;
 }
 
 .item-checkout {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 100px; */
 }
 
 .item-checkout-total {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #4c1582;
+  border-top: 2px solid #4c158240;
 }
 
 #cart-display {
   background-color: #faf8fb;
-  border: 2px solid #4c1582;
+  border: 2px solid #4c158240;
 }
 
-#total {
+#total-cost {
   font-size: 28px;
   font-weight: bold;
 }
@@ -121,16 +137,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
-#checkout {
+/* checkout button  */
+#checkout-btn {
   background-color: #f8d314;
   color: black;
 }
+#checkout-btn:disabled {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #666666;
+}
 
+/* footer styling */
 .footer {
-  /* width: 100%; */
-  /* height: calc(100vh - 20px); */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,3 +164,9 @@ body {
   font-size: 1.2rem;
   color: #333;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  }
+
