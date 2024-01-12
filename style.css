@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  background-color: #4c1582;
   color: white;
   font-size: 24px;
 }
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 48%;
+  width: 100%;
 }
 
 #total-products {
@@ -41,7 +41,8 @@ body {
 }
 
 .img-div {
-  width: 415px;
+  /* changed width from specified 400 to 300. 400px wide doesn't work well */
+  width: 300px;
   height: 115px;
   margin: 5px;
 }
@@ -55,20 +56,34 @@ body {
   margin-bottom: 20px;
   display: inline-flex;
   flex-direction: column;
+  max-width: 590px;
 }
 
 .item {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
+}
+.item-name {
+  font-size: 21px;
+  color: #4c1582;
+  font-weight: bold;
+}
+.item-price {
+  font-size: 24px;
+  display: flex;
   justify-content: space-between;
 }
-
+.item-category {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
 .item-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   font-size: 1vh;
+  width: 100%;
 }
 
 #product-list {
@@ -77,12 +92,18 @@ body {
 }
 
 .add-to-cart {
-  size: 18px;
-  border: 3px solid #4c1582;
+  font-size: 14px;
+  padding: 5px;
+  border: 2px solid #4c1582;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: 60%;
 }
 
 .add-to-cart:hover {
   background-color: #4c1582;
+  color: white;
 }
 
 /* cart display */
