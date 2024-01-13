@@ -105,7 +105,7 @@
           </div>
           <div id="total-div">
             <div id="total-cost">Total: --</div>
-            <button id="checkout-btn">Checkout</button>
+            <button id="checkout-btn" onclick="/cart">Checkout</button>
           </div>
         </div>
       </div>
@@ -119,6 +119,12 @@
       <script src="footer.js"></script>
       <script src="server.js"></script>
       <script src="addToCart.js"></script>
+      <script>
+        const button = document.getElementById('checkout-btn');
+        button.addEventListener('click', () => {
+          window.location.href = '/cart?shoppingCart=value';
+        });
+      </script>
     </footer>
   </body>
 </html>

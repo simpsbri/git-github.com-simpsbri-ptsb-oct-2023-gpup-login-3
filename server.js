@@ -26,12 +26,15 @@ app.use((req, res, next) => {
 
 // Define the GET Home page route
 app.get('/', (req, res) => {
+  console.log(path.join(__dirname));
   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 // Define the GET Store/cart page route
-app.get('/store', (req, res) => {
+app.get('/cart', (req, res) => {
   res.sendFile(path.join(__dirname, '/cart.html'));
+  const shoppingCart = req.query.shoppingCart;
+  console.log(`The value of the variable is: ${shoppingCart}`);
 });
 
 // Define the POST checkout route
